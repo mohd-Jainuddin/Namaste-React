@@ -1,10 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-// JSX--HTML like or XML like syntax but not HTML.
-
-// Api
-
 const resObj = [
   {
     id: "74901",
@@ -130,77 +123,5 @@ const resObj = [
   },
 ];
 
-const Title = () => (
-  <a href="/">
-    <img
-      src="https://lh3.googleusercontent.com/Em7AHf7XBH_RtGfCBVXz9RH8SM_pHkj3xPP-yd3cRguY1_Jc8fmqgx6WxnvGVyPV5xs5gL3HCD0FCuv6Xo4CwoY6ak4=w256-rw"
-      className="logo"
-      alt="logo"
-    />
-  </a>
-);
 
-const Header = () => {
-  return (
-    <div className="header">
-      <Title />
-      <div className="navitems">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const Body = () => {
-  return (
-    <div className="resturent-list">
-      {resObj.map((res) => (
-        <ReasturantCards resData={res} key={res.id} />
-      ))}
-    </div>
-  );
-};
-
-const Footer = () => {
-  return <h3>Footer</h3>;
-};
-
-const ReasturantCards = (props) => {
-  const { resData } = props;
-  const { name, cuisines, avgRating, cloudinaryImageId, areaName, costForTwo } =
-    resData;
-  return (
-    <div className="card">
-      <img
-        src={
-          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/" +
-          cloudinaryImageId
-        }
-        alt="img"
-      />
-      <h4>{name}</h4>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{avgRating} stars</h4>
-      <h4>{areaName}</h4>
-      <h4>{costForTwo}</h4>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <>
-      <Header />
-      <Body />
-      <Footer />
-    </>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default resObj;
