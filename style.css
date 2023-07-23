@@ -1,9 +1,8 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 5px;
     border: 1px solid black;
-    background-color: yellow;
 }
 
 .navitems > ul{
@@ -12,11 +11,12 @@
 }
 
 .navitems > ul > li{
-    padding: 10px;
+    padding: 30px;
 }
 
 .logo{
     width: 100px;
+    margin: 5px;
 }
 
 .card > img{
@@ -24,16 +24,14 @@
 }
 
 .card{
-    width: 204px;
-    border: 1px solid black;
+    width: 200px;
     padding: 5px;
-    margin: 20px;
-    background-color: lightgray;
+    margin: 5px;
+    background-color: #f0f0f0;
 }
 
 .resturent-list{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -47,4 +45,18 @@
 .filter-btn:hover{
     background-color: brown;
     color: white;
+}
+
+.shimmerContainer{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fake-card{
+    width: 200px;
+    height: 450px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f0f0f0;
 }
