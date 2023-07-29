@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LOGO_URL } from "../utills/constants";
 
 const Header = () => {
   const [buttonName, setBtnName] = useState("LogIn");
+
+  useEffect(()=>{
+    console.log('hello useEffect')
+  },[buttonName])
 
   return (
     <div className="header">
@@ -14,8 +18,8 @@ const Header = () => {
       <div className="navitems">
         <ul>
           <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
           <li>Cart</li>
           <button
             className="login"

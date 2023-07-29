@@ -21,18 +21,21 @@
 
 .card > img{
     width: 100%;
+    border-radius: 20px;
 }
 
 .card{
-    width: 200px;
-    padding: 5px;
-    margin: 5px;
+    width: 210px;
+    padding: 3px;
+    margin: 3px;
     background-color: #f0f0f0;
+    border-radius: 20px;
 }
 
 .resturent-list{
     display: flex;
     flex-wrap: wrap;
+    border: none;
 }
 
 .filter-btn{
